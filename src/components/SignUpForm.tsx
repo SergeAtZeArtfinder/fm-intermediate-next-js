@@ -29,7 +29,9 @@ const SignUpForm = (): JSX.Element => {
         required
       />
 
-      {formState.message && <p className="text-red-500">{formState.message}</p>}
+      {formState?.message && (
+        <p className="text-red-500">{formState.message}</p>
+      )}
       <SubmitButton>Sign up</SubmitButton>
 
       <div>
